@@ -52,6 +52,7 @@
     justify-content: space-evenly;
     margin: 20px auto;
     padding: 5px;
+    margin-bottom: 80px;
   } 
   
   .card {
@@ -76,26 +77,18 @@
     }
     
     .text {
-      padding: 5px;
+      padding: 2px;
       margin-bottom: 5px;
     }
-
-    * {
-      margin: 0;
-    }
     
-    footer {
+    .footer {
       text-align: center;
       position: fixed;
+      left: 0px;
       bottom: 0;
       width: 100%;
       background-color: rgb(56, 56, 56);
       color: white;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    
-    p {
-      text-align: center;
+      padding:  10px 0 10px 0;
     }
     
