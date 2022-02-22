@@ -12,18 +12,21 @@
 
   .description {
       text-align: center;
+      margin-bottom: 100px;
       margin-left: 20%;
       margin-right: 20%;
       font-family: 'Times New Roman', Times, serif;
   }
 
   .title {
+    margin-bottom: 10px;
     text-align: center;
   }
 
   .list {
     text-align: center;
     margin: 10px auto;
+    margin-bottom: 100px;
     list-style: none;
     width: 30%;
   }
@@ -74,4 +77,5 @@
     
     .text {
       padding: 5px;
+      margin-bottom: 5px;
     }
