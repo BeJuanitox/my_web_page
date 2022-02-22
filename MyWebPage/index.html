@@ -1,42 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="header">
-        <img class="picture" src="data:image/jpeg;base64,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" 
-             alt="profile">
-        <h1 class="name">Sebastian M.</h1>
-        <h2 Class="description">Hello world! I'm a student of sowtware engineering. I enjoy play video games, listen music and practice write code with my friends.</h2>
-    </div>
-    <div>
-        <h1 class="title">Hobbies</h1>
-        <ul class="list">
-          <li class="item">
-            <h2>Video Games</h2>
-          </li>
-          <li class="item">
-            <h2>Programming</h2>
-          </li>
-          <li class="item">
-            <h2>Go out with friends</h2>
-          </li>
-          <li class="item">
-            <h2>Play Billar</h2>
-          </li>
-          <li class="item">
-            <h2>Play 51 (cards)</h2>
-          </li>
-        </ul>
-      </div>
+  <div class="header">
+    <img class="picture"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcd6noCF1ofjMqS1Xb5AmEKQFX_wmrFFJ5a9mZoIqsDabq723cOL7xx2EEKhKfFw6Bnw&usqp=CAU"
+      alt="profile">
+    <h1 class="name">Sebastian M.</h1>
+    <h2 Class="description">Hello world! I'm a student of sowtware engineering. I enjoy play video games, listen music
+      and practice write code with my friends.</h2>
+  </div>
+  <div>
+    <h1 class="title">Hobbies</h1>
+    <ul class="list">
+      <li class="item">
+        <h2>Video Games</h2>
+      </li>
+      <li class="item">
+        <h2>Programming</h2>
+      </li>
+      <li class="item">
+        <h2>Go out with friends</h2>
+      </li>
+      <li class="item">
+        <h2>Play Billar</h2>
+      </li>
+      <li class="item">
+        <h2>Play 51 (cards)</h2>
+      </li>
+    </ul>
+  </div>
+  <h1 class="title">Game Cards</h1>
+  <div class="fcards">
+  <div class="card">
+    <img class="character"
+      src="https://rocketleague.media.zestyio.com/rl_gen_blog_1920x1080.f1cb27a519bdb5b6ed34049a5b86e317.jpg"
+      alt="rocket-league">
+    <p class="text">THIS IS ROCKET LEAGUE! It's a game where you play futball but uses cars, It's a online game.</p>
+  </div>
+  <div class="card">
+    <img class="character"
+      src="https://as01.epimg.net/meristation/imagenes/2021/09/30/noticias/1633024381_662344_1633024453_noticia_normal.jpg"
+      alt="call_of_duty_warzone">
+    <p class="text">Warzone is a free battle royale in first person, the last of survive, win</p>
+  </div>
+  <div class="card">
+    <img class="character" src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1uU7lXYO5j5cLOqkbWSFRb/a21600951dfe27fbb701aae96f5d33b4/GRW_StandardEdition.jpg" alt="ghost_recon_wildlands">
+    <p class="text">Tom Clancy's Ghost Recon Wildlands is a tactical shooter video game belonging to the open world genre</p>
+  </div>
+  <div class="card">
+    <img class="character" src="https://i.ytimg.com/vi/OmjkNGi3fr0/maxresdefault.jpg" alt="dying_light">
+    <p class="text">Dying Light is a first-person shooter in the Survival Horror genre, which takes place during a
+      zombie apocalypse.</p>
+  </div>
+  <div class="card">
+    <img class="character"
+      src="https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA04195_00/5/i_9ca8b837478cd6471d14a369ec0c35277641ea6c75700784561c4d7f522fa93b/i/icon0.png"
+      alt="brawlhalla">
+    <p class="text">Brawlhalla is a free 2d fighting game</p>
+  </div>
+  <div class="card">
+    <img class="character"
+      src="https://yt3.ggpht.com/ytc/AKedOLRMjRvSs5MdXki23-b6zc6rgU19FOCRog5q2xu5=s900-c-k-c0x00ffffff-no-rj"
+      alt="clash_royale">
+    <p class="text">Clash Royale is a game where your objetive are destroy que enemy towers, if the King's tower is
+      destroyed, the game over.</p>
+  </div>
+  <div class="card">
+    <img class="character"
+      src="https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/header_spanish.jpg?t=1644618331" alt="destiny_2">
+    <p class="text">Collect unique weapons and armor to customize your look and play style. Venture into high-difficulty
+      cooperative missions and a variety of competitive PvP modes. Experience the dynamic story of Destiny 2
+      first-person with your friends or explore the stars alone.</p>
+  </div>
+  <div class="card">
+    <img class="character" src="https://cdn1.epicgames.com/b30b6d1b4dfd4dcc93b5490be5e094e5/offer/RDR2476298253_Epic_Games_Wishlist_RDR2_2560x1440_V01-2560x1440-2a9ebe1f7ee202102555be202d5632ec.jpg" alt="red_dead_redemption_2">
+    <p class="text">Red Dead Redemption 2 is an action-adventure game of the old west, in an open world and in first and
+      third person perspective, with single player and multiplayer components.</p>
+  </div>
+</div>
 </body>
+
 </html>
-
-
-
-
