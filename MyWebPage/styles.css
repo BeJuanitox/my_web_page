@@ -51,7 +51,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 20px auto;
-    padding: 5px;  
+    padding: 5px;
   } 
   
   .card {
@@ -79,3 +79,23 @@
       padding: 5px;
       margin-bottom: 5px;
     }
+
+    * {
+      margin: 0;
+    }
+    
+    footer {
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(56, 56, 56);
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    p {
+      text-align: center;
+    }
+    
