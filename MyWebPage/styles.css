@@ -9,7 +9,7 @@ body {
   background-color: var(--bg);
   margin: 0px;
   padding: 0px;
-  font-family: 'Luxurious Roman', cursive;
+  font-family: 'Luxurious Roman', cursive, 'Times New Roman', Times, serif;
 }
 
 .header {
