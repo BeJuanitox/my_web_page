@@ -1,29 +1,36 @@
+:root{
+  --bg: #C9C9C9;
+  --bg-boxs: #E9E9E9;
+  --select: #5A82F1;
+  --clr-border: #383838;
+}
+
 body {
-  background-color: rgb(201, 201, 201);
+  background-color: var(--bg);
   margin: 0px;
   padding: 0px;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .picture {
-    border-radius: 18px;
-    border: 3px solid rgb(56, 56, 56);
-    width: 250px;
-    margin-bottom: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .description {
-      text-align: center;
-      margin-bottom: 100px;
-      margin-left: 20%;
-      margin-right: 20%;
-  }
+.picture {
+  border-radius: 18px;
+  border: 3px solid var(--clr-border);
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
 .content{
   width: 100%;
@@ -51,13 +58,13 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(201, 201, 201);
+  background: var(--bg);
   overflow: hidden;
   top: 0;
 }
 .content .text:before{
   left: 3px;
-  text-shadow: -2px 0 red;
+  text-shadow: -2px 0 var(--select);
   animation: glitch-1 2s linear infinite reverse;
 }
 .content .text:after{
@@ -196,81 +203,80 @@ body {
   }
 }
 
-  .title {
-    margin-bottom: 10px;
-    text-align: center;
-  }
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+}
 
-  .list {
-    text-align: center;
-    margin: 10px auto;
-    margin-bottom: 100px;
-    list-style: none;
-    width: 30%;
-    box-shadow: 0 5px 15px rgba(0,0,0,1);
-    border-radius: 8px;
-    padding: 0px;
-    background-color: rgb(233, 233, 233);
-  }
-  
-  .item {
-    text-align: center;
-    border-bottom: 2px solid rgb(56, 56, 56);
-    border-radius: 8px;
-    padding: 8px;
-    transition: all 200ms;
-  }
-  
-  .item:hover {
-    color: white;
-    cursor: pointer;
-    background-color: rgb(90, 130, 241);
-  }
+.list {
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 100px;
+  list-style: none;
+  width: 30%;
+  box-shadow: 0 5px 15px rgba(0,0,0,1);
+  border-radius: 8px;
+  padding: 0px;
+  background-color: var(--bg-boxs);
+}
 
-  .fcards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 80%;
-    margin: 20px auto;
-    padding: 10px;
-    margin-bottom: 80px;
-  } 
-  
-  .card {
-      text-align: center;
-      width: 250px;
-      margin: 20px auto;
-      border-radius: 8px;
-      padding: 5px;
-      transition: all 200ms;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-      background-color: rgb(233, 233, 233);
-    }
-    
-    .card:hover {
-      color: white;
-      cursor: pointer;
-      background-color: rgb(90, 130, 241);
-      transform: scale(1.1);
-    }
-    
-    .character {
-      width: 250px;
-    }
-    
-    .texts {
-      padding: 2px;
-      margin-bottom: 5px;
-    }
-    
-    .footer {
-      text-align: center;
-      left: 0px;
-      bottom: 0;
-      width: 100%;
-      color: black;
-      padding: 0px;
-    }
+.item {
+  text-align: center;
+  border-bottom: 2px solid var(--clr-border);
+  border-radius: 8px;
+  padding: 8px;
+  transition: all 200ms;
+}
 
+.item:hover {
+  color: white;
+  cursor: pointer;
+  background-color: var(--select);
+}
+
+.fcards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  margin-bottom: 80px;
+} 
+
+.card {
+  text-align: center;
+  width: 250px;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 5px;
+  transition: all 200ms;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: var(--bg-boxs);
+}
+
+.card:hover {
+  color: white;
+  cursor: pointer;
+  background-color: var(--select);
+  transform: scale(1.1);
+}
+
+.character {
+  width: 250px;
+}
+
+.texts {
+  padding: 2px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  text-align: center;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  padding: 0px;
+}
