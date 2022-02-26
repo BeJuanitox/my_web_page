@@ -245,6 +245,11 @@ body {
   margin-bottom: 80px;
 } 
 
+.text-cards {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card {
   text-align: center;
   width: 250px;
