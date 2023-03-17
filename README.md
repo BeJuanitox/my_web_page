@@ -1,2 +1,9 @@
-# my_web_page
-Training my first web page
+# My first page.
+
+
+
+Training my first web page.
+
+<hr>
+
+I was learning while doing it.
